@@ -1,5 +1,4 @@
 import 'package:netflix_clone/utils/image_constants.dart';
-import 'package:netflix_clone/view/coming_soon_screen/widget/new_arrival_card.dart';
 
 class DummyDb {
   static List userList = [

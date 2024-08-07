@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/view/bottom_navbar_screen/bottom_navbar_screen.dart';
-import 'package:netflix_clone/view/splash_screen/splash_screen.dart';
 
 void main() {
   runApp(MyApp());

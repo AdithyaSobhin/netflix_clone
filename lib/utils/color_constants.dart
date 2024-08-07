@@ -6,4 +6,5 @@ class ColorConstants {
   static const Color darkgrey = Color(0xff424242);
   static const Color lightgrey = Color(0xffC4C4C4);
   static const Color red = Color(0xffF50914);
+  static const Color lightBlack = Color(0xff1A1A1A);
 }

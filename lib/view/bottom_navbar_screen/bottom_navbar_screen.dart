@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/utils/color_constants.dart';
 import 'package:netflix_clone/view/coming_soon_screen/coming_soon_screen.dart';
 import 'package:netflix_clone/view/home_screen/home_screen.dart';
+import 'package:netflix_clone/view/more_screen/more_screen.dart';
 import 'package:netflix_clone/view/search_screen/search_screen.dart';
-import 'package:netflix_clone/view/search_screen/widget/search_screen_card.dart';
 
 class BottomNavbarScreen extends StatefulWidget {
   const BottomNavbarScreen({super.key});
@@ -20,9 +20,7 @@ class _BottomNavbarScreenState extends State<BottomNavbarScreen> {
     Container(
       color: Colors.blue,
     ),
-    Container(
-      color: Colors.yellow,
-    ),
+    MoreScreen()
   ];
   int selectedIndex = 0;
 
