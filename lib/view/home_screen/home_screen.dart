@@ -153,7 +153,7 @@ class HomeScreen extends StatelessWidget {
             image: DecorationImage(
               fit: BoxFit.cover,
               image: NetworkImage(
-                  "https://s3-alpha-sig.figma.com/img/7bb1/9b45/51b7ed5e50b1b5f28c18a87b391af6d1?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=H1Fl4QHxT2hCVo5muE93kFSX9l5jpmHsJ-bRXrppPiBx7UqhDtX9eED45cL3VRr1I4-od4QlQ7UdDRLCt7~Q1uYB~Poa9iz4655BHYxvzQ1UHZdz79JdAO~ISXnCyJQbBSJxBBRGstTSDb-rRqIXmgS00I8f93pMlKrvFKUecumbheT45oR4nn1ZA3gUrmq5HHv9isu2VXYg5Cl3qvVV~S~L8vvvdQagQNzgMkQsusMrDSlnwuVifYFUsB5FKsllOTgKg4mck2gki7bSpfMbSzAJW~9~5UK1kIOJhcXduxs0Piwf-W5V~vYUerzd3TDd4oYTNqWhatdDLd-G5DBUjg__"),
+                  "https://s3-alpha-sig.figma.com/img/7bb1/9b45/51b7ed5e50b1b5f28c18a87b391af6d1?Expires=1725235200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HU6q~JRZLakHaGLUj-7PeWPuTV-4~3na8YgvjISfkpBzFhI2tKLjPWW6nFpx4AKx6LWmgOOsGkjNElsbFOCAYvVVJ5SS9T4C4-8n54K8BYyaK9FlaD~ax2~DNihVttzlNB8ieHUqXGZ0Ynx-SLON7THLSX0kMTqwjWC7T4vefcziKE9JNuIHD5gE7jbXSECZlZYwF2c8YiAUgn0CbZZY~Tz1OoApMerZGjMcN7Y7rsDHC27ImeCw-YxJ8i2-zIXrWjsIAy25hux9LnQVvl1F9JxzDXLbhmWQnApDvTBVfr-w2N4i9dp3Ns4walckoPxklFf2~rv5EPfIoVhtGdiOVw__"),
             ),
           ),
         ),
