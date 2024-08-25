@@ -1,6 +1,5 @@
-import 'dart:io';
-
 import 'package:flutter/material.dart';
+import 'package:icons_plus/icons_plus.dart';
 import 'package:netflix_clone/dummy_db.dart';
 import 'package:netflix_clone/utils/color_constants.dart';
 import 'package:netflix_clone/view/global_widgets/user_name_card.dart';
@@ -19,6 +18,7 @@ class _MoreScreenState extends State<MoreScreen> {
       backgroundColor: ColorConstants.mainBlack,
       body: SafeArea(
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(
               height: 38,
@@ -49,7 +49,76 @@ class _MoreScreenState extends State<MoreScreen> {
               height: 20,
             ),
             //#2 referrel section
-            _buildReferrelSection()
+            _buildReferrelSection(),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.only(left: 15),
+              child: Row(
+                children: [
+                  Icon(
+                    Icons.check,
+                    color: ColorConstants.mainWhite,
+                  ),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Text(
+                    "My List",
+                    style: TextStyle(color: ColorConstants.mainWhite),
+                  )
+                ],
+              ),
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              color: ColorConstants.darkgrey,
+              height: 2,
+              width: double.infinity,
+            ),
+            SizedBox(
+              height: 10,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    "App Settings",
+                    style: TextStyle(
+                        color: ColorConstants.mainWhite, fontSize: 14.72),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Account",
+                    style: TextStyle(
+                        color: ColorConstants.mainWhite, fontSize: 14.72),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Help",
+                    style: TextStyle(
+                        color: ColorConstants.mainWhite, fontSize: 14.72),
+                  ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Text(
+                    "Sign Out",
+                    style: TextStyle(
+                        color: ColorConstants.mainWhite, fontSize: 14.72),
+                  ),
+                ],
+              ),
+            )
           ],
         ),
       ),
@@ -142,57 +211,47 @@ class _MoreScreenState extends State<MoreScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Icon(
-                Icons.facebook,
-                size: 33,
-                color: Colors.blue,
-              ),
+              Brand(Brands.whatsapp),
               SizedBox(
                 height: 41,
                 child: VerticalDivider(
                   color: ColorConstants.mainWhite,
                   width: 3,
-                  thickness: 3,
+                  thickness: 1,
                 ),
               ),
-              Icon(
-                Icons.facebook,
-                size: 33,
-                color: Colors.blue,
-              ),
+              Brand(Brands.facebook),
               SizedBox(
                 height: 41,
                 child: VerticalDivider(
                   color: ColorConstants.mainWhite,
                   width: 3,
-                  thickness: 3,
+                  thickness: 1,
                 ),
               ),
-              Icon(
-                Icons.facebook,
-                size: 33,
-                color: Colors.blue,
-              ),
+              Brand(Brands.gmail),
               SizedBox(
                 height: 41,
                 child: VerticalDivider(
                   color: ColorConstants.mainWhite,
                   width: 3,
-                  thickness: 3,
+                  thickness: 1,
                 ),
               ),
-              Icon(
-                Icons.facebook,
-                size: 33,
-                color: Colors.blue,
-              ),
-              SizedBox(
-                height: 41,
-                child: VerticalDivider(
-                  color: ColorConstants.mainWhite,
-                  width: 3,
-                  thickness: 3,
-                ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(
+                    Icons.more_horiz,
+                    color: ColorConstants.mainWhite,
+                    size: 30,
+                  ),
+                  Text(
+                    "More",
+                    style: TextStyle(
+                        fontSize: 14.72, color: ColorConstants.mainWhite),
+                  )
+                ],
               )
             ],
           )

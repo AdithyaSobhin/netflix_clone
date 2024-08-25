@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:netflix_clone/utils/color_constants.dart';
 import 'package:netflix_clone/view/coming_soon_screen/coming_soon_screen.dart';
+import 'package:netflix_clone/view/downloads_screen/download_screen.dart';
 import 'package:netflix_clone/view/home_screen/home_screen.dart';
 import 'package:netflix_clone/view/more_screen/more_screen.dart';
 import 'package:netflix_clone/view/search_screen/search_screen.dart';
@@ -17,9 +18,7 @@ class _BottomNavbarScreenState extends State<BottomNavbarScreen> {
     HomeScreen(),
     SearchScreen(),
     ComingSoonScreen(),
-    Container(
-      color: Colors.blue,
-    ),
+    DownloadScreen(),
     MoreScreen()
   ];
   int selectedIndex = 0;

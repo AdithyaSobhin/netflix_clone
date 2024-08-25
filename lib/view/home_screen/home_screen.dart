@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:netflix_clone/dummy_db.dart';
 import 'package:netflix_clone/utils/color_constants.dart';
 import 'package:netflix_clone/utils/image_constants.dart';
+import 'package:netflix_clone/view/home_screen/my_list_screen/my_list_screen.dart';
 import 'package:netflix_clone/view/home_screen/widgets/custom_poster_builder.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -17,7 +18,7 @@ class HomeScreen extends StatelessWidget {
         child: SingleChildScrollView(
           child: Column(
             children: [
-              stack_section(),
+              stack_section(context),
               SizedBox(
                 height: 20,
               ),
@@ -143,7 +144,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Stack stack_section() {
+  Stack stack_section(context) {
     return Stack(
       children: [
         Container(
@@ -167,7 +168,7 @@ class HomeScreen extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              top_section(),
+              top_section(context),
               top10_section(),
             ],
           ),
@@ -176,7 +177,7 @@ class HomeScreen extends StatelessWidget {
     );
   }
 
-  Row top_section() {
+  Row top_section(context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
@@ -189,9 +190,18 @@ class HomeScreen extends StatelessWidget {
           "Movies",
           style: TextStyle(color: ColorConstants.mainWhite, fontSize: 17.2),
         ),
-        Text(
-          "My List",
-          style: TextStyle(color: ColorConstants.mainWhite, fontSize: 17.2),
+        InkWell(
+          onTap: () {
+            Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => MyListScreen(),
+                ));
+          },
+          child: Text(
+            "My List",
+            style: TextStyle(color: ColorConstants.mainWhite, fontSize: 17.2),
+          ),
         ),
       ],
     );
